@@ -1,55 +1,50 @@
-// export default [
+// const obj = [
 //   {
-//     page: 'Hero',
-//     path: '/Hero',
-//     type: '',
+//     title: '1',
+//     logo: '',
+//     message: 'DOLOR SIT AEMTADSDASD',
+//     data: [
+//       {
+//         type: 'text',
+//         data: 'DOLOR SIT AEMTADSDASD',
+//       },
+//       {
+//         type: 'img',
+//         data: '',
+//       },
+//       {
+//         type: 'button',
+//         data: '',
+//       },
+//     ],
 //   },
 //   {
-//     page: 'About',
-//     path: '/About',
-//     type: 'image',
+//     title: '2',
+//     logo: '',
+//     message: 'DOLOR SIT AEMTADSDASD',
+//     data: [
+//       {
+//         type: 'img',
+//         data: '',
+//       },
+//       {
+//         type: 'text',
+//         data: 'DOLOR SIT AEMTADSDASD',
+//       },
+//     ],
 //   },
 //   {
-//     page: 'Team',
-//     path: '/Team',
-//     type: 'carousel',
-//   },
-//   {
-//     page: 'Services',
-//     path: '/Services',
-//     type: 'images',
-//   },
-//   {
-//     page: 'Contact',
-//     path: '/Contact',
-//     type: '',
-//   },
-//   {
-//     page: 'Footer',
-//     path: '/Footer',
-//     type: '',
+//     title: '3',
+//     logo: '',
+//     message: '',
+//     data: [
+//       {
+//         type: 'text',
+//         data: 'DOLOR SIT AEMTADSDASD',
+//       },
+//     ],
 //   },
 // ];
-
-// const obj = {
-//   sections: [
-//     {
-//       page: 'Home',
-//       path: '/',
-//       styles: {},
-//     },
-//     {
-//       page: 'About',
-//       path: '/about',
-//       styles: {},
-//     },
-//   ],
-//   components: [
-//     {
-//       type: '',
-//     },
-//   ],
-// };
 
 export default [
   {
