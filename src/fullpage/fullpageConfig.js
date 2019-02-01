@@ -1,10 +1,9 @@
-import sections from '../navigation/items';
+// import sections from '../navigation/items';
 
-const anchors = sections.map(section => section.page);
+// const anchors = sections.map(section => section.page);
 
 export default {
   callbacks: ['onLeave'],
   licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-  anchors,
-  down: true,
+  down: true
 };

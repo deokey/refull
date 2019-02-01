@@ -5,7 +5,7 @@ import { isIE11 } from '../../utils';
 
 export default class FlipBox extends Component {
   state = {
-    active: false,
+    active: false
   };
 
   componentDidMount() {
@@ -19,14 +19,15 @@ export default class FlipBox extends Component {
   handleScroll = () => {
     console.log('SCROLL');
     const { active } = this.state;
-    const pageTopOffset = window.pageYOffset + parseFloat(window.outerHeight / 3.5);
+    const pageTopOffset =
+      window.pageYOffset + parseFloat(window.outerHeight / 3.5);
     if (pageTopOffset > this.node.offsetTop && !active) {
       this.setState({
-        active: true,
+        active: true
       });
     } else if (pageTopOffset < this.node.offsetTop && active) {
       this.setState({
-        active: false,
+        active: false
       });
     }
   };
@@ -34,11 +35,15 @@ export default class FlipBox extends Component {
   render() {
     const { active } = this.state;
     const { bg, logo, title, children, handleClick } = this.props;
-    console.log('VIENE BOX ENTERO', this.props);
+    // console.log('VIENE BOX ENTERO', this.props);
 
     return (
       <div
-        className={classnames('flipbox', isIE11 ? 'ie-support' : 'cubic-support', active && 'active')}
+        className={classnames(
+          'flipbox',
+          isIE11 ? 'ie-support' : 'cubic-support',
+          active && 'active'
+        )}
         ref={ref => (this.node = ref)}
         onClick={handleClick}
         role="presentation"
@@ -47,7 +52,7 @@ export default class FlipBox extends Component {
           <div
             className="flipbox__front-side"
             style={{
-              backgroundImage: `url(${bg})`,
+              backgroundImage: `url(${bg})`
             }}
           >
             <div className="flipbox__innercontent">
@@ -58,7 +63,7 @@ export default class FlipBox extends Component {
           <div
             className="flipbox__back-side"
             style={{
-              backgroundImage: `url(${bg})`,
+              backgroundImage: `url(${bg})`
             }}
           >
             <div className="flipbox__innercontent">{children}</div>

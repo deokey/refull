@@ -13,18 +13,36 @@ import Slides from './components/Slides';
 //   style: { textAlign: 'center', color: bg !== '' ? '#fffff' : '#000000', backgroundColor: bg || '#ffffff' },
 // }));
 
+const flipBoxes = [
+  {
+    title: '1',
+    logo: '',
+    message:
+      'Para hacer una Transferencia Total, podrás depositar todo tu fondo disponible en Fondos Profuturo, en una entidad bancaria o en ambos según el porcentaje que tu decidas.'
+  },
+  {
+    title: '2',
+    logo: '',
+    message: '2'
+  },
+  {
+    title: '3',
+    logo: '',
+    message:
+      'Para hacer una Transferencia Parcial, podrás depositar un porcentaje de tu fondo disponible en Fondos Profuturo o en una entidad bancaria y un porcentaje para tu pensión en cualquier modalidad de retiro.'
+  }
+];
 export const Section = props => {
   const { scrollDown, section, scrollUp } = props;
-  const { styles, data } = section;
-  const { flipBoxes } = data;
+  // const { styles, data } = section;
+  // const { flipBoxes } = data;
+
   const style = {
     className: 'section',
     style: {
       textAlign: 'center',
-      color: styles.bg ? '#ffffff' : '#000000',
-      backgroundColor: styles.bg !== '' ? styles.bg : 'transparent',
-      backgroundRepeat: 'no-repeat',
-    },
+      color: '#ffffff'
+    }
   };
   console.log('PUCHAS', props, 'style>>>>', style);
 
@@ -38,9 +56,10 @@ export const Section = props => {
                 ¿Qué es Fondos<strong> Profuturo</strong>?
               </h1>
               <p>
-                <strong>Fondos Profuturo (Aportes Sin Fin Previsional)</strong> es una excelente alternativa de
-                inversión para tus ahorros a corto, mediano o largo plazo, que te permite realizar aportes y retiros
-                ilimitados.
+                <strong>Fondos Profuturo (Aportes Sin Fin Previsional)</strong>{' '}
+                es una excelente alternativa de inversión para tus ahorros a
+                corto, mediano o largo plazo, que te permite realizar aportes y
+                retiros ilimitados.
               </p>
             </div>
             {flipBoxes.map((box, index) => (
@@ -75,8 +94,9 @@ export const Section = props => {
             <Slides>
               <div>
                 <h3>
-                  Para hacer una Transferencia Total, podrás depositar todo tu fondo disponible en Fondos Profuturo, en
-                  una entidad bancaria o en ambos según el porcentaje que tu decidas.
+                  Para hacer una Transferencia Total, podrás depositar todo tu
+                  fondo disponible en Fondos Profuturo, en una entidad bancaria
+                  o en ambos según el porcentaje que tu decidas.
                 </h3>
               </div>
               <div>
@@ -172,7 +192,13 @@ const UpArrow = () => (
     height="50px"
     style={{ cursor: 'pointer' }}
   >
-    <polyline fill="none" points="3,15.5 12,6.5 21,15.5 " stroke="#fff" strokeMiterlimit="10" strokeWidth="2" />
+    <polyline
+      fill="none"
+      points="3,15.5 12,6.5 21,15.5 "
+      stroke="#fff"
+      strokeMiterlimit="10"
+      strokeWidth="2"
+    />
   </svg>
 );
 
